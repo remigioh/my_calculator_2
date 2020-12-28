@@ -12,6 +12,7 @@
 			<button onclick="inverse()"> 1/x </button>
 			<button onclick="square()"> x^2 </button>
 			<button onclick="cube()"> x^3 </button>
+			<button onclick="power_4()"> x^4 </button>
 			<button onclick="sine()"> Sin </button>
 		</p>
 		<script type="text/javascript">
@@ -31,6 +32,11 @@
 			function sine(){
 				n1.value = Math.sin(n1.value);
 				}
+					
+			function power_4() {
+				n1.value = Math.pow(n1.value, 4);
+			}	
+
 		</script>
 	</body>
 </html>
