@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Calculator</title>
+		<title>Calculadora en html y Javascript</title>
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h1>Calculadora de Remigio Hernandez Lopez</h1>
+		<h1>Calculadora dearrollada por Remigio Hernandez Lopez</h1>
 		Number:
 		<input type="text" id="n1">
 		<p>
 			<button onclick="inverse()"> 1/x </button>
 			<button onclick="square()"> x^2 </button>
 			<button onclick="cube()"> x^3 </button>
+			<button onclick="sine()"> Sin </button>
 		</p>
 		<script type="text/javascript">
+			
 			function inverse(){
 			n1.value=1/n1.value
 			}
-			function cube() {
-			n1.value = Math.pow(n1.value, 3);
-			}
+			
 			function square() {
 			n1.value = Math.pow(n1.value,2); 
 			}
+			
+			function cube(){
+			n1.value = Math.pow(n1.value, 3);
+			}
+			
+			function sine(){
+				n1.value = Math.sin(n1.value);
+				}
 		</script>
 	</body>
 </html>
